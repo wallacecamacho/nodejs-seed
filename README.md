@@ -1,4 +1,13 @@
-# Visão Geral
+# Visão Geral - Está é uma aplicação Seed nodejs
+
+# Passport
+# Mongoose
+# MongoDB
+# Joi
+# Winston
+# Mocha
+# Sinon
+# EsLint-AirBnd
 
 Projeto categoria-dashboard-backend responsável por gerar relatório e gráfico das categorias disponibilizadas.
 
