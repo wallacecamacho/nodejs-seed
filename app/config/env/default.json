@@ -1,0 +1,100 @@
+{
+    "app": {
+        "name": "dat-backend",
+        "baseRoute": "/api",
+        "port": 3001,
+        "secport": 3443,
+        "host": "localhost"
+    },
+    "security": {
+        "tokenLife" : 3600
+    },
+    "mailer": {
+        "oath2": {
+            "type": "service_account",
+            "project_id": "platinum-honor-209621",
+            "private_key_id": "367b1a151bae4ed53fc83d1ce49259b4eebd3402",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDZ7mN2IgzRGjQc\nvZ2R2rFnVYM0Mmg2sOqGoX9zr0+LjOr9wq1TuneJnymp4qPo6TdnFh4c1/MmIxjb\nfDontyHdec5eMMsWyHCGcH/u8dgh3Zd+AnY3Vlre5llrb53MATbPRYF86PNtwIaK\nYvQTCZXszBD82QhnoYv3/L6QDdo8+RA4dHj7ySLg7xWbtEAESeJBOSVyZbR4cFiY\n25hmqRR3EHexoudsoA0KBOUoMlvBI0+5fVQlN7t4pQSzXb4ddtpyssviM497CnKL\nDF8UJVwN4kt3N/8c1WoqDC2aZo9YBy6pHuIHVA805hx5RtN0Q+zun3ZWCyXktyp8\nzaU7dCVFAgMBAAECggEASVCc7k+LL0dY87hIi5peZyyJ7KPukkOXSn6HMYRvRru8\nDG2TQOEwuMAuVIQ17zOSG2CB9eMiXhidkq0qpVTDFE6XgfF5SStaS6gKKfj7ZH03\nK0GpwnkPLgChYXbVx5068qTn6H0385q6yFB82vC1GsoWBvH+lVpwC5fgBfdbDXp/\nrgF5LgiSV2bsd5e2k5MMXEr+xBbpNAaJ28FonkcAHIIQ9FqIb7nFadOeIcCNZId7\nJFvK8kWOaLUXl7yBA31qJmSnE7IAULWdVtiU/uEIOW51QiDS2E0Q8GqpfsVMdRuD\n/Rig9iE+Afw27sIopQE9OBF3gPm8Ie5vwo53xupoKwKBgQDvS5B/RUaVJefaLAKK\nx03VGi94ioxY49h0ZkrxTuD1ibNGOmO1nzc/T6+QSiKHZFkX0bHxg3qwc1UF5/BM\nvMJgSdtseSvECtvQh8b459tJfP4Z1jrnUQ0Chu+AYAMc+jKu3O7ZkAXkaJfn3L9x\nKnbCCfasUejai9uWaX/8MtMm4wKBgQDpJQeD9PhSmDVt4aI6Z6GkCwh0nnI6h5X7\nkVDfkumND2r7aQ1cfn2mbCjxKC4uBh/rWqMA4x2lnEbWF96NKGiRFRw16cx9aGo+\no1JzuU1o2ZTu1vZ5jk1UAK4yPHmfJYV7tYnXByfBY1quzCJTf9j5QFiDe+hRYJKX\n6bt25EWTtwKBgQDCIduoZNtOROJD7VBipi5OpF++uygBNVd1l0dVXVjD2mLGprgd\nsH1xr4QO2xYIITDmUgi6lqACZo6jq/cXSkunMkQBTIxlDyolkwGpDPCqPe0nqNVA\ntFCJrE7BJyNfbtuPYU2k02L0WqZiRIRLmteds9ebFRiDtNMAw7ZBNDp5YQKBgQCC\nExrCUGZLDoigqYYtN6xDLbSl+9CXPxY6qLSKSBjtjnCNm+rMc/X+Z9Hf2h8Jpnkg\nggz3bb8YqrwKrn6IGsdcSn7WxX5FaX/9OnnB/txlZx9ksaIJ547VExwdAwiH9hMn\nFf21blSL3La3V0S/eVDAn1nC4dqXrF2dS9Y/WtRGuQKBgQC/N4ywspQNjgfpFUCZ\nRt5Q9reRM1pjPF9zwEcwtrMdIg87QEujqyz8QmRg//JKNuBihwmLmy9hsHaPYJLf\nhYzqKrN5WPwTxgHwDvEJDuQ721EeaFbwnaSk4/aFWjHd6LmPyqk5VT7crztqF7Wm\nc1jn2vZoIY+GuYFqA/BMx9e4eQ==\n-----END PRIVATE KEY-----\n",
+            "client_email": "envio-email@platinum-honor-209621.iam.gserviceaccount.com",
+            "client_id": "116670208169330798439",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://accounts.google.com/o/oauth2/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/envio-email%40platinum-honor-209621.iam.gserviceaccount.com"
+          },  
+        "serverConfig": {
+            "service": "gmail",
+            "host": "smtp.gmail.com",
+            "port": 465,
+            "secure" : true,
+            "auth": {
+                    "user": "apppersonalinbox@gmail.com",
+                    "pass": "desenvpib"
+                },
+            "logger": false,
+            "debug": false
+        },
+        "fromConfig": {
+            "from": "apppsersonalinbox@gmail.com" ,
+            "headers": ""     
+        }  
+    },
+    "db": {
+        "url": "mongodb+srv://user_app:app_user@cluster0-nws52.mongodb.net/fulltext",
+        "options": {
+            "poolSize": 10,
+            "keepAlive": 300000,
+            "connectTimeoutMS": 30000
+        }
+    },
+    "redis": {
+        "host": "localhost",
+        "port": 6379
+    },
+    "log": {
+        "debug": true,
+        "winston": {
+            "name": "Application",
+            "streams": [
+                {
+                    "level": "debug",
+                    "type": "rotating-file",
+                    "path": "log/{hostname}.log",
+                    "period": "1d",
+                    "count": 2
+                }
+            ]
+        }
+    },
+    "authorization": {
+        "enabled": "true",
+        "scheme": "Baerer",
+        "jwt": {
+            "secret": "49b4e2f9-ec31-4758-bae5-741a80e0e8de",
+            "expiresIn": "1h"
+        }
+    },
+    "audit": {
+        "enabled": true,
+        "printLog": true,
+        "winston": {
+            "name": "Audit",
+            "streams": [
+                {
+                    "level": "debug",
+                    "type": "rotating-file",
+                    "path": "log/audit.log",
+                    "period": "1d",
+                    "count": 3
+                }
+            ]
+        }
+    },
+    "origin": {
+        "require": {
+            "application": false,
+            "channel": false,
+            "device": false
+        }
+    }
+}

@@ -1,0 +1,2 @@
+{"@message":"connect database","@timestamp":"2018-09-05T22:17:10.532Z","@fields":{"level":"info","label":"dat-backend - Database"}}
+{"@message":"connect database debug","@timestamp":"2018-09-05T22:17:10.533Z","@fields":{"level":"debug","label":"dat-backend - Database"}}

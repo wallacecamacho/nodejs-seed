@@ -1,0 +1,119 @@
+Arguments: 
+  /home/desenv/.nvm/versions/node/v8.11.1/bin/node /home/desenv/.nvm/versions/node/v8.11.1/bin/yarn add winstom --save
+
+PATH: 
+  /home/desenv/.local/share/umake/bin:/home/desenv/bin:/home/desenv/.local/bin:/home/desenv/Android/Sdk/tools:/home/desenv/Android/Sdk/platform-tools:/home/desenv/bin:/home/desenv/.local/bin:/home/desenv/.nvm/versions/node/v8.11.1/bin:/home/desenv/.local/share/umake/bin:/home/desenv/bin:/home/desenv/.local/bin:/home/desenv/Android/Sdk/tools:/home/desenv/Android/Sdk/platform-tools:/home/desenv/bin:/home/desenv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  8.11.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/winstom: Not found
+      at Request.params.callback [as _callback] (/home/desenv/.nvm/versions/node/v8.11.1/lib/node_modules/yarn/lib/cli.js:65327:18)
+      at Request.self.callback (/home/desenv/.nvm/versions/node/v8.11.1/lib/node_modules/yarn/lib/cli.js:133155:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/home/desenv/.nvm/versions/node/v8.11.1/lib/node_modules/yarn/lib/cli.js:134138:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/home/desenv/.nvm/versions/node/v8.11.1/lib/node_modules/yarn/lib/cli.js:134058:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "piloto_backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "NODE_ENV=default nodemon app",
+      "start:prod": "NODE_ENV=production nodemon app",
+      "test": "istanbul cover ./node_modules/mocha/bin/mocha ./app/modules/**/*/test/unit/*.unit.js --exit",
+      "integration": "istanbul cover ./node_modules/mocha/bin/mocha ./app/modules/**/*/test/integration/*.integration.js --exit ",
+      "commit": "commit-wizard"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.18.3",
+      "bunyan": "^1.8.12",
+      "compression": "^1.7.2",
+      "consign": "^0.1.6",
+      "express": "^4.16.3",
+      "express-session": "^1.15.6",
+      "express-validator": "^5.2.0",
+      "glob": "^7.1.2",
+      "joi": "^13.4.0",
+      "jsonwebtoken": "^8.2.2",
+      "lodash": "^4.17.10",
+      "memory-cache": "^0.2.0",
+      "mongodb-stitch": "^3.1.4",
+      "mongodb-utils": "^1.1.6",
+      "mongoose": "^5.1.4",
+      "ngx-gravatar": "^3.0.1",
+      "nodemailer": "^4.6.7",
+      "passport": "^0.4.0",
+      "passport-facebook": "^2.1.1",
+      "passport-google-oauth": "^1.0.0",
+      "passport-http-bearer": "^1.0.1",
+      "passport-jwt": "^4.0.0",
+      "passport-local": "^1.0.0",
+      "passport-restify": "^1.0.1",
+      "passport-restify-node": "^0.4.0",
+      "pretty-format": "^23.0.1",
+      "redis": "^2.8.0",
+      "restify": "^7.2.1",
+      "restify-cors-middleware": "^1.1.1",
+      "restify-errors": "^6.1.0",
+      "server-destroy": "^1.0.1"
+    },
+    "devDependencies": {
+      "chai": "^4.1.2",
+      "eslint": "^4.19.1",
+      "eslint-config-airbnb": "^16.1.0",
+      "eslint-config-airbnb-base": "^12.1.0",
+      "eslint-plugin-import": "^2.12.0",
+      "eslint-plugin-jsx-a11y": "^6.0.3",
+      "eslint-plugin-react": "^7.9.1",
+      "istanbul": "^0.4.5",
+      "mocha": "^5.2.0",
+      "nock": "^9.3.2",
+      "nodemon": "^1.17.5",
+      "pre-commit": "^1.2.2",
+      "pre-git": "^3.17.1",
+      "sinon": "^5.1.0",
+      "superagent-mocker": "^0.5.2",
+      "supertest": "^3.1.0"
+    },
+    "release": {
+      "analyzeCommits": "simple-commit-message"
+    },
+    "config": {
+      "pre-git": {
+        "pre-commit": [
+          "npm run test",
+          "npm run integration"
+        ],
+        "pre-push": [],
+        "post-commit": [
+          "git status"
+        ],
+        "post-checkout": "npm install",
+        "post-merge": "npm install"
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

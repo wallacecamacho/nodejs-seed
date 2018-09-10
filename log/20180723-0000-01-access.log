@@ -1,0 +1,5 @@
+::1 - - [20/Jul/2018:03:06:57 +0000] "PUT /api/usuario HTTP/1.1" 200 7 "-" "PostmanRuntime/7.1.5"
+::1 - - [20/Jul/2018:03:09:33 +0000] "PUT /api/usuario HTTP/1.1" 200 7 "-" "PostmanRuntime/7.1.5"
+::1 - - [20/Jul/2018:03:13:01 +0000] "PUT /api/usuario HTTP/1.1" 200 7 "-" "PostmanRuntime/7.1.5"
+::1 - - [20/Jul/2018:03:15:55 +0000] "PUT /api/usuario HTTP/1.1" 200 7 "-" "PostmanRuntime/7.1.5"
+::1 - - [20/Jul/2018:03:17:31 +0000] "PUT /api/usuario HTTP/1.1" 200 7 "-" "PostmanRuntime/7.1.5"
